@@ -1,0 +1,34 @@
+<!-- <div class="wrap">
+  <div id="arrow_left" class="arrow"></div>
+
+  <div id="slider">
+    <div class="slide1 slide">
+      <div class="slide_content">
+        <span>Simple</span>
+      </div>
+    </div>
+    <div class="slide2 slide">
+      <div class="slide_content">
+        <span>Beautiful</span>
+      </div>
+    </div>
+    <div class="slide3 slide">
+      <div class="slide_content">
+        <span>Robust</span>
+      </div>
+    </div>
+  </div>
+  <div id="arrow_right" class="arrow"></div>
+</div> -->
+
+<div class="slider-container">
+  <div
+    class="slide"
+    *ngFor="let image of sliderImages.images; let i = index"
+    [ngStyle]="{ display: i === current ? 'block' : 'none' }"
+  >
+    <!-- Your image content here -->
+  </div>
+  <button id="arrow_left" (click)="slideLeft()">&lt;</button>
+  <button id="arrow_right" (click)="slideRight()">&gt;</button>
+</div>

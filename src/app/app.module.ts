@@ -11,6 +11,12 @@ import { ErrorPageComponent } from './widgets/error-page/error-page/error-page.c
 import { PortfolioComponent } from './widgets/portfolio/portfolio.component';
 import { ContactUsComponent } from './widgets/contact-us/contact-us.component';
 import { BarComponent } from './widgets/bar/bar.component';
+import { SlideBannerComponent } from './widgets/slide-banner/slide-banner.component';
+import { PicBannerComponent } from './widgets/pic-banner/pic-banner.component';
+import { ContactPageWithMapComponent } from './widgets/contact-page-with-map/contact-page-with-map.component';
+import { VerticalTabsComponent } from './widgets/vertical-tabs/vertical-tabs.component';
+import { AutoplaySliderComponent } from './widgets/autoplay-slider/autoplay-slider.component';
+import { VideoSliderComponent } from './widgets/video-slider/video-slider.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +28,16 @@ import { BarComponent } from './widgets/bar/bar.component';
     ErrorPageComponent,
     PortfolioComponent,
     ContactUsComponent,
-    BarComponent
+    BarComponent,
+    SlideBannerComponent,
+    PicBannerComponent,
+    ContactPageWithMapComponent,
+    VerticalTabsComponent,
+    AutoplaySliderComponent,
+    VideoSliderComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
